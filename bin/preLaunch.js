@@ -4,7 +4,7 @@ const requestPromise = require('request-promise');
 return publicIp.v4().then((ip) =>
     requestPromise.post({
         method: 'POST',
-        uri: 'http://localhost:6969/dnsRecord',
+        uri: 'http://panel.mall-e-robots.com/dnsRecord',
         body: {
             password: "test",
             name: "Robot-1",
