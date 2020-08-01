@@ -18,4 +18,4 @@ const launchRobot = () => handleEvents(spawn('ls', []));
 
 const stopRobot = () => handleEvents(spawn('ls', []));
 
-module.exports = launchRobot;
+module.exports = {launchRobot, stopRobot};
