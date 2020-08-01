@@ -14,7 +14,10 @@ const handleEvents = (execution) => {
     );
 }
 
-const launchRobot = () => handleEvents(spawn('ls', []));
+const launchRobot = () => handleEvents(spawn('roslaunch', [
+    'turtlebot3_follower',
+    'turtlebot3_follower.launch'
+]));
 
 const stopRobot = () => handleEvents(spawn('ls', []));
 
